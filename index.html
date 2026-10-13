@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rhwlffk2 - 모바일 앱 스튜디오</title>
+  <style>
+    :root {
+      --primary: #2E7D32;
+      --bg: #F8FAF9;
+      --card-bg: #FFFFFF;
+      --text: #222222;
+      --subtext: #666666;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 680px;
+      width: 100%;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--primary);
+      margin: 0 0 10px 0;
+    }
+    p.desc {
+      color: var(--subtext);
+      font-size: 15px;
+      margin: 0;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+      border: 1px solid #EAEAEA;
+    }
+    .app-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0 0 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .app-desc {
+      font-size: 14px;
+      color: var(--subtext);
+      line-height: 1.5;
+      margin: 0 0 16px 0;
+    }
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    a.btn {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
+    .btn-primary:hover {
+      background: #1B5E20;
+    }
+    .btn-secondary {
+      background: #F0F2F1;
+      color: #333333;
+    }
+    .btn-secondary:hover {
+      background: #E2E6E4;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: #999999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌱 모바일 앱 공식 개발자 포털</h1>
+      <p class="desc">사용자에게 실질적인 가치를 제공하는 스마트 라이프 앱을 개발합니다.</p>
+    </header>
+
+    <div class="card">
+      <h2 class="app-title">쑥쑥캐시 (SsookSsook Cash)</h2>
+      <p class="app-desc">매일매일 내 손안에서 쑥쑥 자라는 확실한 포인트 리워드! 간단한 터치로 커피, 편의점 기프티콘을 교환해 보세요.</p>
+      <div class="btn-group">
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.yunsun.ssookssook" target="_blank">Google Play 스토어</a>
+        <a class="btn btn-secondary" href="ssookssook_cash_privacy.html">개인정보처리방침</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="app-title">베베팬트리 (BebePantry)</h2>
+      <p class="app-desc">초보 부모님을 위한 가장 스마트한 이유식 & 식단 플래너 및 냉장고 식자재 관리 솔루션.</p>
+      <div class="btn-group">
+        <a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.yunsun.bebepantry" target="_blank">Google Play 스토어</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 rhwlffk2. All rights reserved.</p>
+      <p><a href="app-ads.txt" style="color: #999999; text-decoration: none;">app-ads.txt</a></p>
+    </footer>
+  </div>
+</body>
+</html>
