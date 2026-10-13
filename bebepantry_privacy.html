@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베베팬트리 (BebePantry) - 개인정보처리방침</title>
+    <style>
+        :root {
+            --primary: #FF7B54;
+            --primary-dark: #D9532F;
+            --bg: #FDFBF7;
+            --text-main: #2D3142;
+            --text-sub: #6B7280;
+            --card-bg: #FFFFFF;
+            --border: #E5E7EB;
+        }
+
+        * {
+            box-content: border-box;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            padding: 36px 28px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        header {
+            border-bottom: 2px solid #F3F4F6;
+            padding-bottom: 20px;
+            margin-bottom: 28px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(255, 123, 84, 0.12);
+            color: var(--primary-dark);
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 13px;
+            color: var(--text-sub);
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-top: 32px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p, ul {
+            font-size: 14.5px;
+            color: #4B5563;
+            margin-bottom: 14px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-box {
+            background-color: #FFF9F5;
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 0 12px 12px 0;
+            margin: 16px 0;
+            font-size: 14px;
+            color: #4A3B32;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 13.5px;
+        }
+
+        th, td {
+            border: 1px solid var(--border);
+            padding: 10px 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #F9FAFB;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-sub);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="badge">개인정보 보호 정책</div>
+        <h1>베베팬트리 개인정보처리방침</h1>
+        <div class="last-updated">시행 일자: 2026년 10월 10일</div>
+    </header>
+
+    <div class="highlight-box">
+        <strong>💡 핵심 요약 (안심 원칙)</strong><br>
+        베베팬트리(BebePantry)는 <strong>별도의 회원가입이나 로그인 서버가 없는 로컬 기반 앱</strong>입니다.<br>
+        사용자가 입력하는 아기 정보(이름, 생년월일), 식단, 이유식 큐브 재고 및 알레르기 기록은 <strong>사용자의 스마트폰/태블릿 기기 내부에만 안전하게 저장</strong>되며 외부 서버로 일체 전송되지 않습니다.
+    </div>
+
+    <h2>1. 개인정보의 수집 및 이용 목적</h2>
+    <p>베베팬트리는 원활한 이유식 큐브 재고 관리 및 식단 플래너 기능 제공을 위해 최소한의 정보를 기기 내부에 저장합니다.</p>
+    <table>
+        <tr>
+            <th>구분</th>
+            <th>항목</th>
+            <th>저장 위치 및 목적</th>
+        </tr>
+        <tr>
+            <td>아기 프로필</td>
+            <td>이름(태명), 생년월일, 성별, 이유식 단계, 프로필 사진</td>
+            <td><strong>기기 내부(로컬 DB)</strong>: 아기 맞춤형 입자 크기 및 일령 계산</td>
+        </tr>
+        <tr>
+            <td>이유식 및 식단</td>
+            <td>큐브 재고, 제조일자, 소비기한, 알레르기 테스트 기록, 섭취 일지</td>
+            <td><strong>기기 내부(로컬 DB)</strong>: 큐브 재고 차감, 식단 알림 및 통계</td>
+        </tr>
+    </table>
+
+    <h2>2. 접근 권한 안내 및 이용 목적</h2>
+    <p>앱 기능 실행에 필요한 최소한의 디바이스 권한만을 요청하며, 사용자가 허용하지 않더라도 해당 기능 외 기본 기능은 이용 가능합니다.</p>
+    <ul>
+        <li><strong>카메라 (선택)</strong>: 식단표 이미지 촬영 및 온디바이스 OCR(문자 인식)을 통한 자동 일정 등록 (기기 내에서 실시간 처리 후 이미지는 서버로 전송되지 않음)</li>
+        <li><strong>알림 (선택)</strong>: 알레르기 반응 관찰 타이머, 큐브 소비기한 임박 알림 등 푸시 안내</li>
+        <li><strong>정확한 알람 (선택)</strong>: 식단 시간 및 섭취 후 알레르기 관찰 타이머의 정시 울림</li>
+    </ul>
+
+    <h2>3. 제3자 제공 및 위탁 (광고 SDK 안내)</h2>
+    <p>베베팬트리는 원칙적으로 사용자의 개인정보를 제3자에게 제공하거나 판매하지 않습니다. 다만, 무료 서비스 운영을 위해 구글 광고 플랫폼을 탑재하고 있습니다.</p>
+    <ul>
+        <li><strong>Google AdMob (Google LLC)</strong>:
+            <ul>
+                <li>수집 항목: 광고 식별자(ADID/IDFA), 대략적인 기기 정보, 광고 상호작용 데이터</li>
+                <li>목적: 맞춤형 및 비맞춤형 배너 광고 제공 및 트래픽 분석</li>
+                <li>구글 개인정보처리방침: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>4. 개인정보의 보유 및 파기 절차</h2>
+    <p>사용자의 모든 데이터는 사용자 기기에만 보관되므로 다음과 같이 언제든지 완전히 파기할 수 있습니다.</p>
+    <ul>
+        <li>앱 내에서 특정 아기 프로필, 큐브 재고, 식단 기록을 삭제하면 기기 내 데이터베이스에서 즉각 영구 삭제됩니다.</li>
+        <li>스마트폰에서 '베베팬트리' 앱을 삭제(제거)하거나 '앱 데이터 삭제'를 실행하면 모든 데이터가 완전히 소멸됩니다.</li>
+    </ul>
+
+    <h2>5. 아동의 개인정보 보호</h2>
+    <p>본 앱은 만 18세 이상의 보호자(부모)가 아기의 이유식 일정을 기록하고 관리하기 위해 사용하는 서비스입니다. 아동으로부터 직접 개인정보를 수집하지 않습니다.</p>
+
+    <h2>6. 개인정보 보호책임자 및 문의처</h2>
+    <p>서비스 이용 중 발생하는 개인정보 보호 관련 문의 및 건의사항은 아래의 이메일로 연락주시면 신속하게 답변드리겠습니다.</p>
+    <ul>
+        <li><strong>앱 이름</strong>: 베베팬트리 (BebePantry)</li>
+        <li><strong>개발자/관리자</strong>: 베베팬트리 팀 (rhwlffk2)</li>
+        <li><strong>문의 이메일</strong>: <a href="mailto:wjsthd10@gmail.com">wjsthd10@gmail.com</a></li>
+    </ul>
+
+    <h2>7. 개인정보처리방침의 변경</h2>
+    <p>본 방침은 법령 또는 서비스 정책 변경에 따라 내용이 수정될 수 있으며, 수정 시 앱 업데이트 또는 본 페이지를 통해 공지합니다.</p>
+
+    <footer>
+        &copy; 2026 BebePantry. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>

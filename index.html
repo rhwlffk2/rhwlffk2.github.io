@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>rhwlffk2 - 모바일 앱 스튜디오</title>
+  <title>rhwlffk2 - 공식 모바일 앱 스튜디오</title>
   <style>
     :root {
       --primary: #2E7D32;
@@ -30,12 +30,12 @@
     }
     header {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 36px;
     }
     h1 {
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 800;
-      color: var(--primary);
+      color: #1B5E20;
       margin: 0 0 10px 0;
     }
     p.desc {
@@ -46,18 +46,32 @@
     .card {
       background: var(--card-bg);
       border-radius: 16px;
-      padding: 24px;
+      padding: 22px 24px;
       margin-bottom: 20px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
       border: 1px solid #EAEAEA;
     }
+    .app-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
     .app-title {
-      font-size: 20px;
+      font-size: 19px;
       font-weight: bold;
-      margin: 0 0 8px 0;
+      margin: 0;
       display: flex;
       align-items: center;
       gap: 8px;
+    }
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: #E8F5E9;
+      color: #2E7D32;
     }
     .app-desc {
       font-size: 14px;
@@ -72,12 +86,15 @@
     }
     a.btn {
       display: inline-block;
-      padding: 8px 16px;
-      border-radius: 8px;
+      padding: 9px 16px;
+      border-radius: 10px;
       font-size: 13px;
       font-weight: 600;
       text-decoration: none;
-      transition: background 0.2s;
+      transition: background 0.2s, transform 0.1s;
+    }
+    a.btn:active {
+      transform: scale(0.98);
     }
     .btn-primary {
       background: var(--primary);
@@ -95,39 +112,69 @@
     }
     footer {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 36px;
       font-size: 13px;
       color: #999999;
+      line-height: 1.6;
+    }
+    footer a {
+      color: #666666;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>🌱 모바일 앱 공식 개발자 포털</h1>
-      <p class="desc">사용자에게 실질적인 가치를 제공하는 스마트 라이프 앱을 개발합니다.</p>
+      <h1>🌱 rhwlffk2 모바일 스튜디오</h1>
+      <p class="desc">사용자의 일상을 편리하고 풍요롭게 만드는 모바일 애플리케이션 공식 포털</p>
     </header>
 
+    <!-- 1. 쑥쑥캐시 -->
     <div class="card">
-      <h2 class="app-title">쑥쑥캐시 (SsookSsook Cash)</h2>
-      <p class="app-desc">매일매일 내 손안에서 쑥쑥 자라는 확실한 포인트 리워드! 간단한 터치로 커피, 편의점 기프티콘을 교환해 보세요.</p>
+      <div class="app-header">
+        <h2 class="app-title">쑥쑥캐시 (SsookSsook Cash)</h2>
+        <span class="badge">Google Play 출시</span>
+      </div>
+      <p class="app-desc">매일 터치 한 번으로 쑥쑥 모으고, 편의점 및 커피 기프티콘으로 즉시 교환하는 실속형 리워드 앱.</p>
       <div class="btn-group">
         <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.yunsun.ssookssook" target="_blank">Google Play 스토어</a>
         <a class="btn btn-secondary" href="ssookssook_cash_privacy.html">개인정보처리방침</a>
       </div>
     </div>
 
+    <!-- 2. 베베팬트리 -->
     <div class="card">
-      <h2 class="app-title">베베팬트리 (BebePantry)</h2>
-      <p class="app-desc">초보 부모님을 위한 가장 스마트한 이유식 & 식단 플래너 및 냉장고 식자재 관리 솔루션.</p>
+      <div class="app-header">
+        <h2 class="app-title">베베팬트리 (BebePantry)</h2>
+        <span class="badge">Google Play 서비스</span>
+      </div>
+      <p class="app-desc">초보 부모님을 위한 스마트 이유식 식단 플래너 및 냉장고 식자재·알레르기 안심 관리 솔루션.</p>
       <div class="btn-group">
         <a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.yunsun.bebepantry" target="_blank">Google Play 스토어</a>
+        <a class="btn btn-secondary" href="bebepantry_privacy.html">개인정보처리방침</a>
+      </div>
+    </div>
+
+    <!-- 3. 백색소음 믹서 -->
+    <div class="card">
+      <div class="app-header">
+        <h2 class="app-title">8채널 백색소음기 (WhiteNoiseMixer)</h2>
+        <span class="badge">Google Play 서비스</span>
+      </div>
+      <p class="app-desc">집중력 향상, 수면 유도, 힐링을 위한 맞춤형 8채널 백색소음 멀티트랙 사운드 믹서.</p>
+      <div class="btn-group">
+        <a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.yunsun.whitenoise" target="_blank">Google Play 스토어</a>
+        <a class="btn btn-secondary" href="whitenoise_privacy.html">개인정보처리방침</a>
       </div>
     </div>
 
     <footer>
       <p>© 2026 rhwlffk2. All rights reserved.</p>
-      <p><a href="app-ads.txt" style="color: #999999; text-decoration: none;">app-ads.txt</a></p>
+      <p><a href="app-ads.txt">AdMob 인증 규격 (app-ads.txt)</a></p>
     </footer>
   </div>
 </body>
